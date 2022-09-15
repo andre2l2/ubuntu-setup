@@ -1,6 +1,6 @@
 <div align="center">
   <h1>My Ubuntu Setup</h1>
-  <img src="./assets/icon.svg" width="300px">
+  <img src="./assets/icon.svg" width="200px">
 </div>
 
 ## :art: About
