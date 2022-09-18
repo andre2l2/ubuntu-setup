@@ -1,16 +1,28 @@
 #!/bin/bash
 
+tools=(
+  curl 
+  vim 
+  git
+)
+
 sudo su
-apt-get update
 
-# install git
-apt-get install git -y
+# update
+echo "[UPDATEING]"
+$(apt-get update)
 
-# install curl
-apt-get install curl -y
+# install tools
+for tool in ${tools[@]};
+do
+  echo "[INSTALLING] $tool"
+  $(apt-get install $tool -y)
+done
 
-# install vim
-apt-get install vim -y
+# install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+source ~/.asdf/asdf.sh
+source ~/.asdf/completions/asdf.bash
 
 # setup and install nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
