@@ -4,6 +4,7 @@ tools=(
   curl 
   vim 
   git
+  feh
 )
 
 sudo su
