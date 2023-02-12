@@ -5,7 +5,12 @@ tools=(
   vim 
   git
   feh
+  folder-color
+  gnome-sushi
 )
+
+# Close nautilus
+nautilus -q 
 
 # update
 echo "[UPDATEING]"
