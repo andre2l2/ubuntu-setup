@@ -4,13 +4,11 @@ tools=(
   curl 
   vim 
   git
-  feh
   ncdu
-  neofetch
   docker.io
 );
 
-tools_web=(
+web_tools=(
   https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh
 )
 
@@ -29,7 +27,7 @@ do
 done
 
 # Install web tools
-for tool_web in ${tools_web[@]}
+for tool_web in ${web_tools[@]}
 do
   echo "[INSTALLING] $tool_web"
   $(curl -o- $tool_web | bash)

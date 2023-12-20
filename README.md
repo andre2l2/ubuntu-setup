@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>My Ubuntu Setup</h1>
-  <img src="./assets/icon.svg" width="200px">
+  <img src="./assets/icon.svg" width="120px">
+    <h1>Ubuntu Setup</h1>
 </div>
 
 ## :art: About
@@ -25,7 +25,7 @@ source ~/.asdf/completions/asdf.bash
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.bashrc
 
-# setup zsh 
+# setup zsh
 apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh) && ehco "zsh" >> ~/.bashrc"
 ```
